@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { IsString, IsNotEmpty, IsEmail, MinLength } from "class-validator"
 
-export class CreateUserDto {
+export class SignupDTO {
   @IsString({ message: 'Name needs to be a string' })
   @IsNotEmpty()
   name: string;
